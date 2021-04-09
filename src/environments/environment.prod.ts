@@ -3,6 +3,6 @@ export const environment = {
   keycloakConfig: {
     clientId: 'book-store',
     realm: 'demo',
-    url: 'http://localhost:8081/auth'
+    url: 'http://localhost:8080/auth'
   }
 };
