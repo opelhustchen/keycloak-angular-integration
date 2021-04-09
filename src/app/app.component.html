@@ -1,0 +1,14 @@
+<!-- app.component.html  -->
+<app-header></app-header>
+
+<div style="text-align:center">
+  <h1>
+    Welcome to {{title}}!!
+  </h1>
+  <nav>
+    <a routerLink="home" routerLinkActive="active">Home</a> |
+    <a routerLink="book">book</a> |
+    <a routerLink="user">user</a>
+  </nav>
+  <router-outlet></router-outlet>
+</div>
