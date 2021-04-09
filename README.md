@@ -18,7 +18,7 @@ This project is used to demonstrate how to integrate with Keycloak with angular 
 1. Angular 6/+ Application
 2. Docker is installed in your local environment
 
-![image-20210409115522022](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20210409115522022.png)
+![image-20210409115522022](https://user-images.githubusercontent.com/46369229/114154406-f3b49c00-9952-11eb-8875-f046b938d10f.png)
 
 ### 5. Steps to Setup Keycloak
 
@@ -32,17 +32,17 @@ docker run -p 8080:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin quay.i
 
 This will start Keycloak exposed on the local port 8080. It will also create an initial admin user with username `admin` and password `admin`.
 
-![image-20210409120414762](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20210409120414762.png)
+![image-20210409120414762](https://user-images.githubusercontent.com/46369229/114154685-3fffdc00-9953-11eb-9815-c7dbeef03dfe.png)
 
 2. ##### Login to the admin console
 
    a. Open your browser in incognito mode and key in the url: http://localhost:8080. 
 
-   ![](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20210409120721035.png)
+   ![image-20210409120721035](https://user-images.githubusercontent.com/46369229/114154799-602f9b00-9953-11eb-81cd-053437151d14.png)
 
    b. Click "Administration Console" icon to login admin console with username `admin` and password `admin`
 
-   ![image-20210409121239306](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20210409121239306.png)
+   ![image-20210409121239306](https://user-images.githubusercontent.com/46369229/114154886-789fb580-9953-11eb-9bd9-a56761326f36.png)
 
 3. ##### Create a realm
 
@@ -56,9 +56,9 @@ This will start Keycloak exposed on the local port 8080. It will also create an 
 
    ​	d. Click `Create`
 
-![image-20210409122054996](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20210409122054996.png)
+![image-20210409122054996](https://user-images.githubusercontent.com/46369229/114154973-8c4b1c00-9953-11eb-8c61-5f857dedcebd.png)
 
-![image-20210409122204208](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20210409122204208.png)
+![image-20210409122204208](https://user-images.githubusercontent.com/46369229/114155030-9b31ce80-9953-11eb-94bf-54fcbfbdc0b5.png)
 
 4. ##### Create a client
 
@@ -68,7 +68,7 @@ This will start Keycloak exposed on the local port 8080. It will also create an 
 
    c. Key in  `Client ID` (book-store) and  `Root URL` (http://localhost:4200) as below
 
-![image-20210409150943208](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20210409150943208.png)
+![image-20210409150943208](https://user-images.githubusercontent.com/46369229/114158326-219bdf80-9957-11eb-85a3-3a4543592343.png)
 
 ​		d. Click `Save` button
 
@@ -82,7 +82,7 @@ This will start Keycloak exposed on the local port 8080. It will also create an 
 
 ​	c. Click `Save`
 
-![image-20210409135118237](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20210409135118237.png)
+![image-20210409135118237](https://user-images.githubusercontent.com/46369229/114158536-5c9e1300-9957-11eb-95aa-af96f4d57f71.png)
 
 ​	d. Follow the steps above to create another role(e.g. admin).
 
@@ -98,19 +98,19 @@ This will start Keycloak exposed on the local port 8080. It will also create an 
 
 ​	d. Click `Save`
 
-![image-20210409135716910](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20210409135716910.png)
+![image-20210409135716910](https://user-images.githubusercontent.com/46369229/114158768-a8e95300-9957-11eb-9241-8070dfb72f94.png)
 
 ​	e. Go back to `User` page and search the user just created.
 
-![image-20210409144535980](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20210409144535980.png)
+![image-20210409144535980](https://user-images.githubusercontent.com/46369229/114155246-d7fdc580-9953-11eb-9064-cc9423fefe6f.png)
 
 ​	f. Click the `ID` link, go to the Tab `Credentials`(top of the page), set an initial password for the user `simtech-user` . Set `Temporary` to `OFF` to prevent having to update password on first login.
 
-![image-20210409145013870](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20210409145013870.png)
+![image-20210409145013870](https://user-images.githubusercontent.com/46369229/114155397-08456400-9954-11eb-9521-db370d11bbc8.png)
 
 ​	g. Go to the Tab `Role Mappings`(top of the page), select `user` in the `Available Roles`, click `Add selected` button.
 
-![image-20210409144251926](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20210409144251926.png)
+![image-20210409144251926](https://user-images.githubusercontent.com/46369229/114159101-02518200-9958-11eb-9b9f-edc67bac589d.png)
 
 ​	h. Go back to Tab `Details`, click `Save` button.
 
@@ -124,19 +124,19 @@ This will start Keycloak exposed on the local port 8080. It will also create an 
 
    b. `npm i --save keycloak-angular`
 
-![image-20210409150331746](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20210409150331746.png)
+![image-20210409150331746](https://user-images.githubusercontent.com/46369229/114155537-2f039a80-9954-11eb-9028-33dd23f1d4e8.png)
 
 2. Keycloak Server Configuration
 
    Add KeycloakConfig in the environment const variable in src/environments/environment.prod.ts and src/environments/environment.ts. The configuration must match with the content setup in the Keycloak.
 
-   ![image-20210409151639030](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20210409151639030.png)
+   ![image-20210409151639030](https://user-images.githubusercontent.com/46369229/114155548-32972180-9954-11eb-87dd-a99a410be9f1.png)
 
 3. Keycloak Initialization
 
    Create a file app-init.ts in the project src/app/util directory, and add `initializer`  function.
 
-   ![image-20210409152629495](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20210409152629495.png)
+   ![image-20210409152629495](https://user-images.githubusercontent.com/46369229/114158005-d08beb80-9956-11eb-8232-31a55ddcdff9.png)
 
 4. Integrating into AppModule
 
@@ -146,7 +146,7 @@ This will start Keycloak exposed on the local port 8080. It will also create an 
 
    c. Register Provider of type `APP_INITIALIZER` with `initializer` we defined in `app-init.ts`
 
-   ![image-20210409153446861](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20210409153446861.png)
+   ![image-20210409152626143](https://user-images.githubusercontent.com/46369229/114155553-33c84e80-9954-11eb-9db8-24fbed738e56.png)
 
 5. Guard configuration
 
@@ -154,11 +154,12 @@ This will start Keycloak exposed on the local port 8080. It will also create an 
 
    b. Change the definition of the class as below, notice the `extends`
 
-   ![image-20210409153721057](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20210409153721057.png)
+   ![image-20210409153721057](https://user-images.githubusercontent.com/46369229/114155827-80ac2500-9954-11eb-8fa8-6ed9baead359.png)
 
-   c. Routing Module Configuration. Use the `AuthGuard` for routes that you want to restrict access, Assign required roles for each route in `data` attribute, `roles` parameter as an array.
+   c. Routing Module Configuration. Use the `AuthGuard` for routes that you want to restrict access, Assign required roles for each route in `
+   ` attribute, `roles` parameter as an array.
 
-   ![image-20210409153855994](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20210409153855994.png)
+   ![image-20210409153855994](https://user-images.githubusercontent.com/46369229/114155832-81dd5200-9954-11eb-85b7-3759567895f8.png)
 
 ### 7. Steps to test the application
 
@@ -166,33 +167,33 @@ This will start Keycloak exposed on the local port 8080. It will also create an 
 
    `ng serve`
 
-   ![image-20210409154234983](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20210409154234983.png)
+   ![image-20210409154234983](https://user-images.githubusercontent.com/46369229/114155841-83a71580-9954-11eb-8e99-31858cfe18d1.png)
 
 2. Open your browser in incognito mode and key in the url: http://localhost:4200. Below web page will be shown.
 
-   ![image-20210409154416153](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20210409154416153.png)
+   ![image-20210409153855994](https://user-images.githubusercontent.com/46369229/114155832-81dd5200-9954-11eb-85b7-3759567895f8.png)
 
 3. Click the `Home` button, the url will jump to http://localhost:4200/home. This component is accessible to for all user including anonymous user as per defined in the app-routing.module.ts file. Below web page will be shown.
 
-   ![image-20210409154557305](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20210409154557305.png)
+   ![image-20210409154416153](https://user-images.githubusercontent.com/46369229/114155847-8570d900-9954-11eb-80d2-18d410ad7925.png)
 
 4. Click the `book` button, it should auto redirect to Keycloak login page as this component is only accessible for authenticated user either user role or admin role as per defined in the app-routing.module.ts file.
 
-   ![image-20210409154956946](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20210409154956946.png)
+   ![image-20210409154956946](https://user-images.githubusercontent.com/46369229/114155866-89046000-9954-11eb-823a-4caf576c3e01.png)
 
 5. Key the user name  `simtech-user` and its password, and click  `Sign In` as per setup in Keycloak. After Signing in, click the  `book` button again. The `book` component should be accessible and the web page should display as below.
 
-   ![image-20210409155537179](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20210409155537179.png)
+   ![image-20210409155537179](https://user-images.githubusercontent.com/46369229/114155872-8ace2380-9954-11eb-89bb-4db1548de247.png)
 
 6. Click the `user` button, the `user` component should not accessible as current user does not have admin role.
 
 7. Click the  `Logout` button to logout current user and click the `user` button again,  it should auto redirect to Keycloak login page. Key in the admin user  `simtech-admin` and its password to login as admin user.
 
-   ![image-20210409160003536](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20210409160003536.png)
+   ![image-20210409160003536](https://user-images.githubusercontent.com/46369229/114155877-8c97e700-9954-11eb-8f81-da3e6720d301.png)
 
 8. After login in as admin user, click the `user` button again, the  `user` component should be accessible and the page should display as below.
 
-   ![image-20210409160151195](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20210409160151195.png)
+   ![image-20210409160151195](https://user-images.githubusercontent.com/46369229/114155880-8e61aa80-9954-11eb-9c39-633bc7896c96.png)
 
 ### 8. Other Reference for Keycloak
 
