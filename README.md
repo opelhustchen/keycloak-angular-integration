@@ -171,11 +171,11 @@ This will start Keycloak exposed on the local port 8080. It will also create an 
 
 2. Open your browser in incognito mode and key in the url: http://localhost:4200. Below web page will be shown.
 
-   ![image-20210409153855994](https://user-images.githubusercontent.com/46369229/114155832-81dd5200-9954-11eb-85b7-3759567895f8.png)
+   ![home](https://user-images.githubusercontent.com/46369229/114844373-54d5e700-9e0d-11eb-997e-3dd3335c7b56.PNG)
 
 3. Click the `Home` button, the url will jump to http://localhost:4200/home. This component is accessible to for all user including anonymous user as per defined in the app-routing.module.ts file. Below web page will be shown.
 
-   ![image-20210409154416153](https://user-images.githubusercontent.com/46369229/114155847-8570d900-9954-11eb-80d2-18d410ad7925.png)
+   ![home-works](https://user-images.githubusercontent.com/46369229/114844397-599a9b00-9e0d-11eb-9451-5dcd0397edff.PNG)
 
 4. Click the `book` button, it should auto redirect to Keycloak login page as this component is only accessible for authenticated user either user role or admin role as per defined in the app-routing.module.ts file.
 
