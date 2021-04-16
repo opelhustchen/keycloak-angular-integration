@@ -146,7 +146,7 @@ This will start Keycloak exposed on the local port 8080. It will also create an 
 
    c. Register Provider of type `APP_INITIALIZER` with `initializer` we defined in `app-init.ts`
 
-   ![image-20210409152626143](https://user-images.githubusercontent.com/46369229/114155553-33c84e80-9954-11eb-9db8-24fbed738e56.png)
+   ![initializer-register](https://user-images.githubusercontent.com/46369229/114997408-603f1600-9ed2-11eb-8943-e2e429bf4438.PNG)
 
 5. Guard configuration
 
